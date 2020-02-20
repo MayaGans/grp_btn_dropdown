@@ -1,0 +1,21 @@
+library(shiny)
+library(yonder)
+
+# Define UI for application that draws a histogram
+ui <- fluidPage(
+
+    # Sidebar with a slider input for number of bins 
+    sidebarPanel(
+        yonder::buttonGroupInput("test", choices = c("NONE", "A", "B", "OTHER")),
+        yonder::menuInput("test2", "test2", choices = c("A", "B"), selected = "A"),
+        textOutput("debug")
+        )
+    )
+
+# Define server logic required to draw a histogram
+server <- function(input, output) {
+    output$debug <- renderText(input$test)
+}
+
+# Run the application 
+shinyApp(ui = ui, server = server)

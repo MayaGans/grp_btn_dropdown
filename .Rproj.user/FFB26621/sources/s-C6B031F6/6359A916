@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1582225420908.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3215760949",
+    "id" : "6359A916",
+    "lastKnownWriteTime" : 1582226441,
+    "last_content_update" : 1582226441564,
+    "path" : "~/Desktop/radio_and_dropdown/grp_btn_and_dropdown.js",
+    "project_path" : "grp_btn_and_dropdown.js",
+    "properties" : {
+        "cursorPosition" : "53,58",
+        "scrollLine" : "45",
+        "tempName" : "Untitled6"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "js"
+}

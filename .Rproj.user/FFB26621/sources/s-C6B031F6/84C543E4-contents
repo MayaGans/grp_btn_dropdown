@@ -1,0 +1,37 @@
+"<div id='INPUT'>
+  <div class='btn-group' role='group'>
+  <button class='btn btn-grey active', type='button', value='A'>A</button>
+  <button class='btn btn-grey', type='button', value='B'>B</button>
+  <button class='btn btn-grey', type='button', value='C'>C</button>
+  
+  <div class='btn-group' role='group'>
+    <button class="btn btn-grey dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LABEL</button>
+    <div class="dropdown-menu">
+      <button class="dropdown-item" type="button" value="A">A</button>
+        <button class="dropdown-item" type="button" value="B">B</button>
+          <button class="dropdown-item" type="button" value="C">C</button>
+            </div>
+</div>"
+
+<div class="yonder-menu dropdown" id="INPUT">
+  <button class="btn btn-grey dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LABEL</button>
+    <div class="dropdown-menu">
+      <button class="dropdown-item" type="button" value="A">A</button>
+        <button class="dropdown-item" type="button" value="B">B</button>
+          <button class="dropdown-item" type="button" value="C">C</button>
+            </div>
+
+<div class="yonder-button-group btn-group" id="INPUT" role="group">
+<button type="button" class="btn btn-grey" value="A">A</button>
+<button type="button" class="btn btn-grey" value="B">B</button>
+<button type="button" class="btn btn-grey" value="C">C</button>
+</div>
+
+<div class="yonder-menu dropdown" id="INPUT">
+  <button class="btn btn-grey dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LABEL</button>
+    <div class="dropdown-menu">
+      <button class="dropdown-item" type="button" value="A">A</button>
+        <button class="dropdown-item" type="button" value="B">B</button>
+          <button class="dropdown-item" type="button" value="C">C</button>
+            </div>
+            </div>

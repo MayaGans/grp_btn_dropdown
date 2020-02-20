@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1582147970966.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "8F002C9F",
+    "lastKnownWriteTime" : 1582224424,
+    "last_content_update" : 1582224424473,
+    "path" : "~/Desktop/radio_and_dropdown/testing_radioANDgroup/app.R",
+    "project_path" : "testing_radioANDgroup/app.R",
+    "properties" : {
+        "cursorPosition" : "46,0",
+        "scrollLine" : "25"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

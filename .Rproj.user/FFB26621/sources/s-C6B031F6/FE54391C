@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1582207413840.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1820784821",
+    "id" : "FE54391C",
+    "lastKnownWriteTime" : 1582212020,
+    "last_content_update" : 1582212020228,
+    "path" : "~/Documents/PhishData/Extract_Setlist_Data.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "226,14",
+        "scrollLine" : "208"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

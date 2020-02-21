@@ -3,31 +3,17 @@ library(shinyjs)
 
 source("R/groupButtonAndMenuInput.R")
 
-css <- ".btn-grey {
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: white;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.active.btn-grey, .btn-grey:hover {
-  background-color: #666;
-  color: white;
-}
-"
-
 ui <- fluidPage(
-    
-    inlineCSS(css),
+  
+  # need to use a style sheet to set the active button color to grey
+  # and hover color to grey
+  # is there a way to add a style sheet to the js so it comes with the button?
+  tags$link(rel = "stylesheet", type = "text/css", href = "styles.css"),
 
     sidebarLayout(
         sidebarPanel(
-            
-            verbatimTextOutput("debug"),
-            # this should really be named btnAndMenuOutput to align with Shiny conventions
             groupButtonAndMenuInput("test", choices = c("A", "B", "C"), selected = "C", menuLabel = "OTHER", menuChoices = c("D", "E", "F")),
+            verbatimTextOutput("debug")
         ),
         
         mainPanel(

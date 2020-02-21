@@ -3,9 +3,19 @@
 
 console.log("If this prints, groupButtonAndMenuInput.R and groupButtonAndMenu.js are talking!")
 
+// I need to store the original name of the menuLabel because we're going to change it 
+// if the user selects an option from the dropdown. 
+// I now realize I gave the menu an id which is BAD because what if the user 
+// wants multiple of these inputs??
+// also this doesn't even work
+var originalMenuName = document.getElementById('grouped-dropdown-button').textContent
+
 const groupButtonAndMenu = new Shiny.InputBinding();
 
 $.extend(groupButtonAndMenu, {
+  
+  // the container div of the shiny input has the class groupButtonAndMenu
+  // now we can use this to query all its nodes
   find: function(scope) {
     return scope.querySelectorAll(".groupButtonAndMenu");
   },
@@ -17,7 +27,7 @@ $.extend(groupButtonAndMenu, {
     // returned to Shiny. The ID of `el` is used for the inputId.
     
     const btns = $(el).querySelectorAll('.btn');
-    
+    console.log(btns)
     // this is where I think I'm supposed to put the code I wrote for Shiny.setInputValue
     // Do I just return the value here instead of using that function?
     for (let i = 0; i < btns.length; i++) {

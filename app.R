@@ -27,8 +27,7 @@ ui <- fluidPage(
             
             verbatimTextOutput("debug"),
             # this should really be named btnAndMenuOutput to align with Shiny conventions
-            groupButtonAndMenuInput("test", choices = c("A", "B", "C"), selected = "A", menuLabel = "OTHER", menuChoices = c("1", "2", "3")),
-            tags$script(src="script.js")
+            groupButtonAndMenuInput("test", choices = c("A", "B", "C"), selected = "C", menuLabel = "OTHER", menuChoices = c("D", "E", "F")),
         ),
         
         mainPanel(
@@ -38,7 +37,7 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-    # output$debug <- renderText(input$test)
+    output$debug <- renderText(input$test)
 }
 
 # Run the application 

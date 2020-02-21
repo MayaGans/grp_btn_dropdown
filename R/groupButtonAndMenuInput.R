@@ -17,7 +17,7 @@ single_list_item <- function(choice) {
 }
 
 
-radio_and_dropdown <- function(input, choices, selected, menuLabel, menuChoices) {
+groupButtonAndMenuInput <- function(input, choices, selected, menuLabel, menuChoices) {
   
   choices <- choices[!choices %in% selected]
   

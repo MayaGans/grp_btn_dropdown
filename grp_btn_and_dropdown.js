@@ -6,17 +6,19 @@ const grp_btn_and_dropdown = new Shiny.InputBinding();
 $.extend(grp_btn_and_dropdown, {
   find: function(scope) {
 
-  // this is the CSS selector that can be used to find the HTML element of your input
-  // not sure what this is in my case, it's the div with the id that the user is specifying?
-    return scope.querySelectorAll(".grp_btn_and_dropdown div");
+    // Specify the selector that identifies your input. `scope` is a general
+    // parent of your input elements. This function should return the nodes of
+    // ALL of the inputs that are inside `scope`. These elements should all
+    // have IDs that are used as the inputId on the server side.
+    return scope.querySelectorAll(".grp_btn_and_dropdown");
   },
   getValue: function(el) {
     // For a particular input, this function is given the element containing
     // your input. In this function, find or construct the value that will be
     // returned to Shiny. The ID of `el` is used for the inputId.
     
-    // e.g: return el.value
-    return 'FIXME';
+    // I want to return the 
+    return el.value
   },
   setValue: function(el, value) {
     // This method is used for restoring the bookmarked state of your input
@@ -48,6 +50,7 @@ $.extend(grp_btn_and_dropdown, {
       // the values being sent back to the server.
       callback();
     });
+    
   },
   getRatePolicy: function() {
     return {
@@ -60,4 +63,4 @@ $.extend(grp_btn_and_dropdown, {
   }
 });
 
-Shiny.inputBindings.register(grp_btn_and_dropdown, 'pkgName.bindingName');
+Shiny.inputBindings.register(grp_btn_and_dropdown, 'mayasInputs.grp_btn_and_dropdown');

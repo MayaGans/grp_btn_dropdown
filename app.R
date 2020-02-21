@@ -1,6 +1,8 @@
 library(shiny)
 library(shinyjs)
 
+source("R/groupButtonAndMenuInput.R")
+
 css <- ".btn-grey {
   border: none;
   outline: none;
@@ -25,7 +27,7 @@ ui <- fluidPage(
             
             verbatimTextOutput("debug"),
             # this should really be named btnAndMenuOutput to align with Shiny conventions
-            radio_and_dropdown("test", choices = c("A", "B", "C"), selected = "A", menuLabel = "OTHER", menuChoices = c("1", "2", "3")),
+            groupButtonAndMenuInput("test", choices = c("A", "B", "C"), selected = "A", menuLabel = "OTHER", menuChoices = c("1", "2", "3")),
             tags$script(src="script.js")
         ),
         
@@ -36,7 +38,7 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-    output$debug <- renderText(input$grp_btn_and_dropdown)
+    # output$debug <- renderText(input$test)
 }
 
 # Run the application 

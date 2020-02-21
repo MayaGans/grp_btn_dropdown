@@ -10,15 +10,11 @@ css <- ".btn-grey {
   font-size: 18px;
 }
 
-/* Style the active class, and buttons on mouse-over */
-.active, .btn-secondary:hover {
+.active.btn-grey, .btn-grey:hover {
   background-color: #666;
   color: white;
 }
-
-.dropdown-item {
-    width: 100%;
-}"
+"
 
 ui <- fluidPage(
     

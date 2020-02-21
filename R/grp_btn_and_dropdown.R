@@ -37,6 +37,7 @@ radio_and_dropdown <- function(input, choices, selected, menuLabel, menuChoices)
           HTML(paste0(
             "<button class='btn btn-grey dropdown-toggle'
                  type='button'
+                 id='grouped-dropdown-button'
                  data-toggle='dropdown' 
                  aria-haspopup='true'
                  aria-expanded='false'>", menuLabel, " <span class='caret'></span></button>"

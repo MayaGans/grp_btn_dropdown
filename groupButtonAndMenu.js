@@ -22,14 +22,13 @@ $.extend(groupButtonAndMenu, {
 
   getValue: function(el) {
     
-    // For a particular input, this function is given the element containing
-    // your input. In this function, find or construct the value that will be
-    // returned to Shiny. The ID of `el` is used for the inputId.
-    
+    // This is prob wrong
     const btns = $(el).querySelectorAll('.btn');
-    console.log(btns)
+    
     // this is where I think I'm supposed to put the code I wrote for Shiny.setInputValue
     // Do I just return the value here instead of using that function?
+    
+    // if a button is pressed from the group set its value to the shiny input
     for (let i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function() {
       var current = document.getElementsByClassName("active");
@@ -44,6 +43,9 @@ $.extend(groupButtonAndMenu, {
     });
     }
     
+    // OR
+    
+    // if an option from the dropdown is selected then set that to the shiny input
     $(".dropdown-item").click(function () {
         const value = $(this).attr("value");
         // same ID as above

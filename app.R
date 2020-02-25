@@ -12,7 +12,7 @@ ui <- fluidPage(
 
     sidebarLayout(
         sidebarPanel(
-            groupButtonAndMenuInput("test", choices = c("A", "B", "C"), selected = "C", menuLabel = "OTHER", menuChoices = c("D", "E", "F")),
+            groupButtonAndMenuInput("test", choices = c("NONE", "TRT01P", "SEX", "RACE"), selected = "NONE", menuLabel = "OTHER", menuChoices = c("D", "E", "F")),
             verbatimTextOutput("debug")
         ),
         

@@ -54,7 +54,7 @@ groupButtonAndMenuInput <- function(input, choices, selected, menuLabel, menuCho
         name = "groupButtonAndMenu",
         version = "0.0.1",
         src = ".",
-        script = "groupButtonAndMenu.js",
+        script = list("groupButtonAndMenu.js", "helperfunctions.js"),
         all_files = FALSE
       )
       )

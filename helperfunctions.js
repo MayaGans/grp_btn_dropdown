@@ -1,10 +1,13 @@
 // get the inputid the user specified
-const header = document.getElementById("test");
-const btns = header.querySelectorAll('.btn');
+
+console.log("test")
+
+document.onclick = function(event) {
+// get the inputid the user specified
+const btns = document.querySelectorAll('.btn');
 
 // store the original label of the dropdown menu
 // how do I give each of these a unique id so the user could potentially add as many of these as they want?
-originalMenuName = document.getElementById('grouped-dropdown-button').textContent
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
@@ -33,5 +36,6 @@ $(".dropdown-item").click(function () {
 $(".btn-group > .btn").click(function () {
   // same ID as above 
   document.getElementById('grouped-dropdown-button').innerHTML = 
-  originalMenuName + " <span class='caret'></span>";
+  "OTHER <span class='caret'></span>";
 });
+};

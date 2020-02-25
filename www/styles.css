@@ -4,7 +4,7 @@
   padding: 10px 16px;
   background-color: white;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 10px;
 }
 
 .active.btn-grey, .btn-grey:hover {

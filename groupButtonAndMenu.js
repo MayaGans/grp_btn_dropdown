@@ -1,6 +1,9 @@
 // Ref: https://shiny.rstudio.com/articles/building-inputs.html
 // Ref: https://github.com/rstudio/shiny/blob/master/srcjs/input_binding.js
 
+// We need to change the clicked button or list menus class to active 
+// We can use that in getValue
+
 const groupButtonAndMenu = new Shiny.InputBinding();
 
 $.extend(groupButtonAndMenu, {
@@ -22,8 +25,7 @@ $.extend(groupButtonAndMenu, {
     // The messages are sent from R/Shiny via
     // R> session$sendInputMessage(inputId, data)
     console.error('groupButtonAndMenu.receiveMessage() is not yet defined');
-
-    // If you want the update to trigger reactivity, trigger a subscribed event
+    
     $(el).trigger("change")
   },
   subscribe: function(el, callback) {

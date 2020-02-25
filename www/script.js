@@ -1,25 +1,8 @@
 // get the inputid the user specified
-const header = document.getElementById("test");
-const btns = header.querySelectorAll('.btn');
 
 // store the original label of the dropdown menu
 // how do I give each of these a unique id so the user could potentially add as many of these as they want?
 originalMenuName = document.getElementById('grouped-dropdown-button').textContent
-
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-    // Set results to value, unless it's other
-  // then set to the value of the selected dropdown
-    if($(this).attr("value")){
-      // user specified inputID not hard coded
-        Shiny.setInputValue('grp_btn_and_dropdown', $(this).attr("value"))
-    }
-
-  });
-}
 
 $(".dropdown-item").click(function () {
   const value = $(this).attr("value");

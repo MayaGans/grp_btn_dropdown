@@ -17,7 +17,7 @@ single_list_item <- function(choice) {
 groupButtonAndMenuInput <- function(input, choices, selected, menuLabel, menuChoices) {
   
   div(id = input,
-      class = "groupButtonAndMenu",
+      class = "group-button-and-menu",
       
       div(
         class="button-group btn-group",

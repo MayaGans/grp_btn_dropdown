@@ -16,10 +16,6 @@ for (let i = 0; i < btns.length; i++) {
     this.className += " active";
     // Set results to value, unless it's other
   // then set to the value of the selected dropdown
-    if($(this).attr("value")){
-      // user specified inputID not hard coded
-        Shiny.setInputValue('grp_btn_and_dropdown', $(this).attr("value"))
-    }
 
   });
 }

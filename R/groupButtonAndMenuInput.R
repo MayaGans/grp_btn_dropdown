@@ -59,3 +59,8 @@ groupButtonAndMenuInput <- function(input, choices, selected, menuLabel, menuCho
       )
       )
 }
+
+updateRadioAndMenu <- function(input, choices, selected, menuLabel, menuChoices,
+                               session = shiny::getDefaultReactiveDomain()) {
+  session$sendCustomMessage("groupButtonAndMenu:update", list(input, choices, selected, menuLabel, menuChoices))
+}

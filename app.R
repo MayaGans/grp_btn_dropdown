@@ -13,7 +13,8 @@ ui <- fluidPage(
     sidebarLayout(
         sidebarPanel(
             groupButtonAndMenuInput("test", choices = c("NONE", "TRT01P", "SEX", "RACE"), selected = "NONE", menuLabel = "OTHER", menuChoices = c("D", "E", "F")),
-            verbatimTextOutput("debug")
+            verbatimTextOutput("debug"),
+            actionButton("testing", "Click")
         ),
         
         mainPanel(
@@ -24,6 +25,10 @@ ui <- fluidPage(
 # Define server logic required to draw a histogram
 server <- function(input, output) {
     output$debug <- renderText(input$test)
+    
+    observeEvent( input$testing, {
+      updateRadioAndMenu("test", choices = c("THIS", "TRT01P", "SEX", "RACE"), selected = "NONE", menuLabel = "OTHER", menuChoices = c("D", "E", "F"))
+    })
 }
 
 # Run the application 

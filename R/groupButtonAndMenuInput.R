@@ -60,8 +60,7 @@ groupButtonAndMenuInput <- function(input, choices, selected, menuLabel, menuCho
       )
 }
 
-updateRadioAndMenu <- function(input, choices, selected, menuLabel, menuChoices, session) {
-  message <- list(input, choices, selected, menuLabel, menuChoices)
-  session$sendInputMessage(inputId, message)
+updateRadioAndMenu <- function(session, input, choices, selected, menuLabel, menuChoices) {
+  message <- list(choices=choices, selected=selected, menuLabel=menuLabel, menuChoices=menuChoices)
+  session$sendInputMessage(input, message)
 }
-

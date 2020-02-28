@@ -27,7 +27,7 @@ server <- function(input, output) {
     output$debug <- renderText(input$test)
     
     observeEvent( input$testing, {
-      updateRadioAndMenu("test", choices = c("THESE", "ARE", "NEW", "NAMES"), selected = "NAMES", menuLabel = "OTHER", menuChoices = c("D", "E", "F"))
+      updateRadioAndMenu("test", choices = c("THESE", "ARE", "NEW", "NAMES"), selected = "NAMES", menuLabel = "OTHER", menuChoices = c("D", "E", "F"), session = session)
     })
 }
 

@@ -26,7 +26,8 @@ $(".dropdown-item").click(function () {
   document.getElementById('grouped-dropdown-button').innerHTML = 
   value + " <span class='caret'></span>"
       var current = document.getElementsByClassName("active");
-    current[0].classList.remove("active")
+  current[0].classList.remove("active")
   this.classList.add("active")
+  document.getElementById('groyped-dropdown-button').classList.add("active")
 });
 });
